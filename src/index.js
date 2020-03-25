@@ -1,17 +1,36 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
+import React from 'react'
+import ReactDom from 'react-dom'
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
+// import FirstComponent from './components/FirstComponent'//single element exported
+// import { CompB, CompA } from './components/TwoComponents'//multiple components exported
+// import MultiElements from './components/MultipleElements'//multiple elements exported
+// import Family from './components/Family'
+// import Member from './components/Member'
+// import ComponentsFunctional from './components/ComponetComFuncao'
+// import Father from './components/Father'
+// import Classe from './components/ComponentClass'//component based in class
+// import Contador from './components/Counter'//component based in class
+import Hook from './components/Hook'//component based in class
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.unregister();
+ReactDom.render(
+  <div>
+    <Hook/>
+    {/* <Contador number={0}/> */}
+    {/* <Classe value="123"/>
+    <Classe /> */}
+    {/* <Father></Father> */}
+    {/* <ComponentsFunctional/> */}
+    {/* <MultiElements /> */}
+    {/* <Family lastName="Rosa">
+      <Member name="mayk"/>
+      <Member name="nara"/>
+      <Member name="bia"/>
+      <Member name="Ben"/>
+    </Family> */}
+    {/* <CompB value="value1" />
+    <CompA value="value2" />
+    <FirstComponent value="bom dia" /> */}
+  </div>
+  ,
+  document.getElementById('App')
+)
